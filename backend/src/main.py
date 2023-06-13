@@ -37,5 +37,5 @@ async def analyze_code(code: Code):
 
 if __name__ == "__main__":
     host = os.getenv("HOST")
-    port = 8080
+    port = 8081
     uvicorn.run(app, host=host, port=port)

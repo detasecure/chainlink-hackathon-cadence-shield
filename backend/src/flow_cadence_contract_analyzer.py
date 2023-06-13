@@ -104,7 +104,7 @@ class FlowCadenceContractAnalyzer:
             max_score += impact_scores["High"]
 
         normalized_score = (total_score / max_score) * 100
-
+        normalized_score =round(normalized_score, 2)
         return normalized_score
 
 
