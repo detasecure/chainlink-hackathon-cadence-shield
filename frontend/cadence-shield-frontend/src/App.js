@@ -22,7 +22,7 @@ function App() {
   const [isCodeEmpty, setIsCodeEmpty] = useState(true);
 
   const analyzeCode = async () => {
-    const response = await fetch('http://3.108.126.225/:8081/analyze_flow_cadence_code/', {
+    const response = await fetch('http://3.108.126.225:8081/analyze_flow_cadence_code/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
