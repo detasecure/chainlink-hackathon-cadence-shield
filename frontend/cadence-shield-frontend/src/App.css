@@ -1,0 +1,86 @@
+.app {
+  text-align: center;
+}
+
+.app-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 80vh;
+}
+
+.code-editor,
+.output {
+  width: 45%;
+  height: 100%;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+
+.analyze-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.output {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.output h2 {
+  margin-top: 20px;
+}
+
+.output p {
+  margin: 5px 0;
+}
+
+.low {
+  color: green;
+}
+
+.medium {
+  color: orange;
+}
+
+.high {
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px;
+}
+
+.header img {
+  margin-right: 20px;
+}
+
+.header h4 {
+  font-size: 2.5rem;
+  /* Adjust this value as needed */
+}

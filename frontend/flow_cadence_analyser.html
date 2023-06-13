@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flow Contract Inspector</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.css">
+  <style>
+    #output {
+      margin-top: 20px;
+      color: red;
+      width: 50%;
+      height: 80%;
+      overflow: auto;
+    }
+    .CodeMirror {
+      border: 1px solid #ccc;
+      height: 80%;
+      width: 50%;
+    }
+    .CodeMirror-scroll {
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flow Contract Inspector</h1>
+  <textarea id="code"></textarea>
+  <button onclick="analyzeCode()">Analyze</button>
+  <div id="output"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/clike/clike.js"></script>
+  <script src="./analyser.js"></script>
+  <script>
+    var codeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
+      lineNumbers: true,
+      mode: 'text/x-csrc'
+    });
+  </script>
+</body>
+</html>
